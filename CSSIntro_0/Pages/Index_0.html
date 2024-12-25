@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+    
+
+
+        #prg1 {
+            background-color: aqua;
+            color:black;
+          
+        }
+
+        p {
+            background-color: #286a13;
+            color: darkred;
+        }
+
+        .deneme {
+            background-color: #5d5112;
+            color: blue;
+        }
+
+       .cagriButton{
+           background-color:blue;
+           width: 100px;
+           height:20px;
+           border : dashed;
+           color:white;
+           cursor : crosshair;
+         
+       }
+
+       .jumbotron{
+           background-color : gray;
+           padding:40px 20px; /*Icerik icin bırakılacak top ve rightten bosluk*/
+           border-radius : 8px; /*Hafif oval koseler*/
+           text-align:center; /*Ortalanmıs yazı*/
+           box-shadow : 0 4px 6px rgba(0,0,0,0.1); /* Hafif gölgelendirmek*/
+       }
+
+
+       .jumbotron-title{
+           font-size:2.5rem; /*Büyük baslık*/
+           font-weight:bold;
+           color:darkblue;
+       }
+
+
+
+
+
+       
+        
+    </style>
+
+
+</head>
+<body>
+
+    <!--
+    
+     CSS,sizin tasarımınızı daha ayrıntılı bir şekilde güzelleştirmenizi ve şeikllendirmenizi saglayan bir dildir (Cascading Style Sheet)
+
+
+        Sizin CSS yazabilmeniz 3 yöntem vardır:
+
+
+        1 => Inline CSS yazmak : Start tag'inin icerisine style attribute'u vererek CSS yazmaktır...Tekrarlı kullanılmayacak ve sadece ilgili elemente stil verecek bir kodu yazmak istediginizde tercih edilir...Inline css yazıldıgında yer itibariyle diger yöntemde yazılan bütün css durumları ezilir (Inline CSS her zaman öncelige sahiptir)
+
+
+        2 => Internal CSS yazmak : Aynı sayfada tekrarlı CSS kullanmak isterseniz veya Inline CSS'te yazabileceginizden daha fazla CSS kodu varsa bu noktada internal CSS yazarsınız. Internal CSS sayfanızın her tarafına yazılabilecek olsa da en saglıklı olanı head taglerinin arasına yazmaktır...
+
+        3 => External CSS yazmak :Birden fazla sayfada kullanmak istedigimiz veya cok kompleks ve uzun CSS kodları artık external CSS'e yazılırlar. External CSS sayesinde siz aslında bir CSS dosyası olusturuyorsunuz ve onu birden fazla sayfada kullanabilir hale geliyorsunuz...
+
+
+        *selectors
+
+        --Isme göre 
+        Siz bir tag'i ismiyle secebilirsiniz.  Ancak sayfadaki bütün o tagler'i secmiş olursunuz.
+
+
+        p{
+          background-color:red;
+        
+        }
+
+
+
+        --ID'ye göre secmek
+
+        #xyx1{
+          
+            background-color : red;
+        
+        }
+
+        -- class'a göre secmek
+
+        .a{
+            background-color : red;
+        }
+
+
+        class ve id secilerek yapılan tasarımlar her zaman isimle secilenlere göre daha öncelikle render pozisyonuna aittir (ezilmezler)
+
+        id > class > tag
+    
+    
+    
+    -->
+
+    <p style="background-color:lightblue">
+        Hello World
+    </p>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+
+    <p>
+
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+
+    <p id="prg1" class="deneme">
+        Id'ye sahip olan paragraf
+    </p>
+
+
+    <p class="deneme">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+
+    <p class="deneme">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <p class="deneme">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+
+
+    <input type="button" value="Tikla" id="btnTikla" class="cagriButton" />
+
+
+
+    <hr />
+
+
+    <div class="jumbotron">
+
+
+        <h1 class="jumbotron-title">Jumbotron</h1> 
+
+
+
+    </div>
+
+
+</body>
+</html>
